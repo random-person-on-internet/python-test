@@ -18,4 +18,4 @@ def test_create_user():
     }
     response = client.post("/users", json=new_user)
     assert response.status_code == 200
-    assert response.json()["message"] == "User added successfully"
+    assert response.json()["message"] == "SUCCESS : User added"
